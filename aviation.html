@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Universal head -->
+        <meta charset="UTF-8" />
+        <link rel="icon" href="./images/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Xeyn's website" />
+        <link
+            rel="stylesheet"
+            href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+        />
+        <link rel="stylesheet" href="./css/universal.css" />
+        <title>Xeyn's website</title>
+
+        <!-- Individual head -->
+        <script src="./js/aviation.js"></script>
+    </head>
+    <body>
+        <!-- Nav bar -->
+        <nav>
+            <div id="nav">
+                <a class="nav-item" href="/"> Home </a>
+                <a class="nav-item" href="/serpinski-triangle.html">
+                    Serpinski Triangle
+                </a>
+                <a class="nav-item" href="/aviation.html"> Aviation </a>
+            </div>
+            <div id="spacer"></div>
+        </nav>
+
+        <!-- Main content -->
+        <div class="card">
+            <h2 class="card-title">Flight Plan</h2>
+            <div class="card-text-container">
+                <div class="card-input-and-text">
+                    <p>
+                        SimBrief ID:&nbsp;
+                        <input
+                            type="text"
+                            id="simbrief-id-box"
+                            class="card-input-box"
+                            oninput="setSimbriefTextbox()"
+                        />
+                    </p>
+                </div>
+                <button
+                    class="card-button"
+                    id="simbrief-button"
+                    type="submit"
+                    onclick="redirectFlightPlan()"
+                >
+                    Get Flight Plan
+                </button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="card-title">Boeing 737NG</h2>
+            <div class="card-text-container">
+                <div class="card-text no-margin-top">
+                    <a href="./files/b737ng-checklist.pdf">Checklist</a>
+                </div>
+                <div class="card-text no-margin-top">
+                    <a href="./files/b737ng-qrh.pdf">QRH</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
