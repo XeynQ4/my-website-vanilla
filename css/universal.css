@@ -13,13 +13,15 @@ body {
     --card-border-color: #f34273;
 
     font-size: 1.6rem;
-    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI',
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
         'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
         'Helvetica Neue', sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
     display: flex;
     flex-direction: column;
+    align-items: center;
+    white-space: nowrap;
 }
 
 html,
@@ -74,6 +76,7 @@ button {
     background: var(--card-background-color);
     padding: 2.5rem;
     border-radius: 3rem;
+    margin-top: 6rem;
 }
 
 .card-title {
@@ -147,21 +150,4 @@ button {
 .nav-item:hover,
 .nav-button:hover {
     background-color: var(--button-hover-color);
-}
-
-/* Home */
-.home {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-}
-
-.home-intro {
-    margin: 6rem;
-}
-
-.contacts {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
 }
