@@ -24,7 +24,6 @@ function getCookie(cname) {
 
 function setSimbriefIdBox() {
     let simbriefIdBox = document.getElementById('simbrief-id-box');
-    console.log(simbriefIdBox);
     let simbriefTextbox = getCookie('simbriefTextbox');
     if (simbriefTextbox == '') return;
     simbriefIdBox.value = simbriefTextbox;
